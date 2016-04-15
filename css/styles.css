@@ -1,0 +1,10 @@
+.img-center{
+	margin: auto;
+}
+#portada{
+	background-image: url("../images/portada/fondo.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+}
