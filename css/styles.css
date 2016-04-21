@@ -1,10 +1,391 @@
 .img-center{
 	margin: auto;
 }
+article{
+	background-image: url("../images/general/fondo.jpg");
+	background-position: center center;
+	background-size: 100% 616px;
+	background-repeat: repeat-y;
+	
+}
+.kalam{font-family: 'Kalam', cursive;}
+.lato_light{font-family: 'Lato', sans-serif;}
+.color_azul{color: #384171;}
+.color_rojo{color: #ce2f3a;}
+.color_gris{color: #333333;}
+.circulo-azul{background-image: url("../images/circulos/circazul.png");}
+.circulo-gris{background-image: url("../images/circulos/circgris.png");}
+.circulo-rojo{background-image: url("../images/circulos/circrojo.png");}
+.circulo{
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.abs_center{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.encabezado {
+    max-width: 730px;
+    margin-bottom: 15px;
+}
 #portada{
-	background-image: url("../images/portada/fondo.jpg");
+	background-image: url("../images/portada/fondo_1.jpg");
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
+	min-height: 420px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}	
+	#portada-inner {
+	    height: 385px;
+	    width: 300px;
+	    position: absolute;
+	    margin: auto;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	}
+	#logo-libreta{
+		width: 300px;
+		max-width: 510px;
+	}
+	#etiqueta{
+		max-width: 416px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width: 250px;
+	}
+section{
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
+#partido{}
+	#partidos-total{
+		background-image: url("../images/circulos/circgris.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 196px;
+		height: 196px;
+		margin: auto;
+		line-height: 215px;
+		text-align: center;
+		font-size: 100px;
+		font-weight: 600;
+	}
+	.partido-flechas{
+		display: none;
+	}
+	.partidos_graficos{
+		max-width: 275px;
+		width: 100%;
+		max-height: 275px;
+		height: 100%;
+		margin: auto;
+		position: relative;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.partidos_graficos div{
+		width: 140px;
+		height: 140px;
+		font-size: 24px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.partidos_graficos > div > span{
+		font-size: 48px;
+	}	
+	.partidos-desc{
+		width: 135px;
+		height: 135px;
+		margin: auto;
+		font-size: 24px;
+		text-align: center;
+		padding-top: 30px;
+		cursor: pointer;
+	}
+	#partidos-desgloce > div {
+	    height: 198px;
+	    overflow-y: hidden;
+	}
+	.partidos-detalles {
+		width: 100%;
+		font-size: 14px;
+		max-width: 170px;
+		margin: auto;
+	}
+	.partidos-detalles .fa {
+	    font-size: 63px;
+	    margin: auto;
+	    width: 40px;
+	    display: block;
+	}
+	.partidos-detalles > ul > li {
+	    list-style: none;
+		width: 100%;
+		background-color: #fff;
+		margin-bottom: 3px;
+		display: inline-block;
+		padding: 6px 4px 3px;
+		border-radius: 15px;
+		max-width: 165px;
+	}
+	.partidos-detalles > ul > li > *{
+		display: inline-block;
+		float: left;
+	}
+	.partidos-detalles > ul > li > img {
+		width: 20px;
+		height: 20px;
+	}
+	.partidos-detalles > ul > li > .nombre-equipos {
+		padding: 0px 5px;
+	}
+	.partidos-detalles > ul > li > .partido-marcador {
+		font-weight: 600;
+		position: relative;
+	}
+	.mexico-pointer{
+		display: block;
+	    background-color: #28edb2;
+	    width: 4px;
+	    height: 4px;
+	    position: absolute;
+	    border-radius: 50%;
+	    top: 0;
+	}
+	.mexico-local {	    
+	    left: 3px;
+	}
+	.mexico-visitante {	    
+	    right: 3px;
+	}
+section#jugadores{}
+	#equipos-container {
+	    position: relative;
+	    width: 100%;
+	}
+	.equipo-gnral {
+	    width: 40%;
+	    display: inline-block;
+	    float: left;
+	    position: relative;
+	    margin: 5%;
+	}
+	.equipo-jugadores {
+	    height: 50%;
+	    width: 100%;
+	    text-align: center;
+	    z-index: -1;
+	    font-size: 15px;
+	    font-weight: 600;
+	}
+	.equipo-gnral:hover > img,
+	.equipo-gnral:focus > img {
+		opacity: 0.5;
+	}
+	.equipo-gnral:hover > .equipo-jugadores,
+	.equipo-gnral:focus > .equipo-jugadores{
+		z-index: 2;
+	}
+section#incondicionales{}
+	#grafica-container{
+		margin-top: 85px;
+		position: relative;
+	}
+	.jugadores-incondicionales {
+	    position: absolute;
+	    bottom: 50px;
+	    left: 70px;
+	    height: 100%;
+	    width: 90px;
+	}
+	.fotos-jugadores-incondicionales {
+	    width: 90px;
+	    height: 90px;
+	    display: inline-block;
+	}
+	.linea-jugadores-incondicionales {
+	    width: 1px;
+	    margin: auto;
+	    border: 1px solid #000;
+	    height: 100%;
+	}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 450px){
+	#logo-libreta {
+    	width: 400px;
+	}
+	#etiqueta {
+	    width: 350px;
+	}
+	#portada-inner {
+	    width: 450px;
+	    height: 510px;
+	}
+}
+@media screen and (min-width: 768px){
+	#logo-libreta {
+    	width: 510px;
+	}
+	#etiqueta{
+		width: 416px;
+		margin-top: 70px;
+		margin-bottom: 50px;
+	}
+	#portada-inner {
+	    height: 640px;
+	    width: 530px;
+	}
+	.partidos_graficos{
+		margin-top: 0px;
+		margin-bottom: 70px;
+	}
+	.partido-flechas{
+		display: block;
+		margin-top: 95%;
+	}
+	.equipo-jugadores {
+		font-size: 22px;
+	}
+	#jugadores-container {
+		position: relative;
+		height: 620px;
+	}
+	.equipo-gnral {
+	    position: absolute;
+	    margin: auto;
+	}
+	#xolos{
+		width: 102px;
+		height: 102px;
+		top: 163px;
+		left: 0px;
+	}
+	#chivas{
+		width: 159px;
+		height: 205px;
+		top: 142px;
+		left: 115px;
+	}
+	#tigres{
+		width: 168px;
+		height: 252px;
+		top: 0px;
+		left: 287px;
+	}
+	#pumas{
+		width: 197px;
+		height: 192px;
+		top: 124px;
+		left: 470px
+	}
+	#queretaro{
+		width: 95px;
+		height: 108px;
+		top: 307px;
+		left: 0px;
+	}
+	#pachuca{
+		width: 124px;
+		height: 160px;
+		top: 384px;
+		left: 86px;
+	}
+	#cazul{
+		width: 100px;
+		height: 100px;
+		top: 351px;
+		left: 220px;
+	}
+	#leon{
+		width: 107px;
+		height: 120px;
+		top: 275px;
+		left: 321px;
+	}
+	#monterrey{
+		width: 101px;
+		height: 118px;
+		top: 379px;
+		left: 405px;
+	}
+	#america{
+		width: 179px;
+		height: 179px;
+		top: 353px;
+		left: 510px;
+	}
+	#santos{
+		width: 84px;
+		height: 114px;
+		top: 254px;
+		left: 636px
+	}
+	#atlas{
+		width: 96px;
+		height: 109px;
+		top: 503px;
+		left: 195px;
+	}
+	#toluca{
+		width: 130px;
+		height: 170px;
+		top: 405px;
+		left: 299px;
+	}
+}
+@media screen and (min-width: 992px){
+	.partido-flechas{
+		margin-top: 60%;
+	}
+	#partidos-flecha-izq{
+		margin-left: 20.667%;
+	}
+	#jugadores-container {
+	    width: 895px;
+	    margin: auto;
+	}
+	#chivas{left: 143px;}
+	#tigres{left: 343px;}
+	#pumas{left: 598px;}
+	#queretaro{left: 41px;}
+	#pachuca{left: 160px;}
+	#cazul{left: 316px;}
+	#leon{left: 459px;}
+	#monterrey{left: 583px;}
+	#america{left: 689px;}
+	#santos{left: 810px;}
+	#atlas{left: 305px;}
+	#toluca{left: 430px;}
+}
+@media screen and (min-width: 1200px){
+	.partido-flechas {
+	    margin-top: 40%;
+	    width: 100%;
+	}
+}
+

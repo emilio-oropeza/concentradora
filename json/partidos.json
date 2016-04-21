@@ -1,0 +1,91 @@
+{
+	"partidos":[		
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":3,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": true
+		},
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":4,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": true
+		},
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":5,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": true
+		},
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":6,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": true
+		},
+	
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":1,
+			"scoreVisitante":1,
+			"mexicoIsLocal":true,
+			"oficial": true
+		},	
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":3,
+			"scoreVisitante":2,
+			"mexicoIsLocal":false,
+			"oficial": true
+		},
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":3,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": false
+		},
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":4,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": false
+		},
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":5,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": false
+		},
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":6,
+			"scoreVisitante":2,
+			"mexicoIsLocal":true,
+			"oficial": false
+		},
+	
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":1,
+			"scoreVisitante":1,
+			"mexicoIsLocal":true,
+			"oficial": false
+		},
+	
+		{
+			"rival":"Nueva Zelanda",
+			"scoreLocal":3,
+			"scoreVisitante":2,
+			"mexicoIsLocal":false,
+			"oficial": false
+		}
+	]	
+}

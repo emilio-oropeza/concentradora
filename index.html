@@ -48,18 +48,260 @@
 		</script>
 	</head>
 	<body>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:300italic,300|Kalam:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<section id="portada">
-			<div class="container">
+		<article>
+			<section id="portada">
 				<div id="portada-inner">
-					<img class="img-responsive img-center" src="images/portada/logolibreta.png">
-					<img class="img-responsive img-center" src="images/portada/encabezados.svg">
+					<img id="logo-libreta" class="img-responsive img-center" src="images/portada/logocompletolibreta.png">
+					<img id="etiqueta" class="img-responsive img-center" src="images/portada/encabezados.svg">
+					<img  class="img-responsive img-center" src="images/portada/IMG_PresentadoJuan.png">
 				</div>
-			</div>
-		</section>
-		<script type="text/javascript" src="js/script.js"></script>
+			</section>
+			<section id="partido" class="kalam color-gris">
+				<div class="container">
+					<img id="encabezado-partidos" class="encabezado img-responsive img-center" src="images/partidos/partidos_jugados.svg">
+					<div class="row">
+						<div id="partidos-flecha-izq" class="col-xs-0 col-sm-2 col-sm-offset-2 col-md-2 col-md-offset-2">
+							<img class="partido-flechas img-responsive img-center"  src="images/partidos/flecha_iz.png">
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div id="partidos-total"></div>
+						</div>
+						<div class="col-xs-0 col-sm-2">
+							<img class="partido-flechas img-responsive img-center" src="images/partidos/flecha_der.png">
+						</div>
+					</div>
+					<div id="row-graficos" class="row">
+						<div class="col-sm-4 col-sm-offset-1">
+							<div class="partidos_graficos">
+								<canvas id="canvas-oficiales" width="100%" height="100%"></canvas>
+								<div class="abs_center">
+									<span></span><br>partidos oficiales
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-sm-offset-2">
+							<div class="partidos_graficos">
+								<canvas id="canvas-amistosos" width="100%" height="100%"></canvas>
+								<div class="abs_center">
+									<span></span><br>partidos amistosos
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="partidos-desgloce" class="row">
+						<div class="col-xs-6 col-sm-4 col-md-2">
+							<div class="circulo circulo-azul partidos-desc">
+								<span>13</span><br>Ganados
+							</div>
+							<div class="partidos-detalles lato_light">
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+								<!--<i class="fa fa-angle-down" aria-hidden="true"></i>-->
+								<ul>
+									<li>
+										<img class="banderitas img-circle" src="images/partidos/banderas/nuevazelanda.png">
+										<div class="nombre-equipos">Nueva Zeleanda</div>
+										<div class="partido-marcador">
+											<span class="mexico-pointer mexico-local"></span>5 - 1
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-2">
+							<div class="circulo circulo-gris partidos-desc">
+								<span>13</span><br>Empatados
+							</div>
+							<div class="partidos-detalles lato_light">
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+								<ul></ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-2">
+							<div class="circulo circulo-rojo partidos-desc">
+								<span>13</span><br>Perdidos
+							</div>	
+							<div class="partidos-detalles lato_light">
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+								<ul></ul>
+							</div>						
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-2">
+							<div class="circulo circulo-azul partidos-desc">
+								<span>13</span><br>Ganados
+							</div>
+							<div class="partidos-detalles lato_light">
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+								<ul></ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-4 col-md-2">
+							<div class="circulo circulo-gris partidos-desc">
+								<span>13</span><br>Empatados
+							</div>
+							<div class="partidos-detalles lato_light">
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+								<ul></ul>
+							</div>
+						</div>
+						<div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-2">
+							<div class="circulo circulo-rojo partidos-desc">
+								<span>13</span><br>Perdidos
+							</div>
+							<div class="partidos-detalles lato_light">
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+								<ul></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="jugadores">
+				<div class="container">
+					<img class="encabezado img-responsive img-center" src="images/jugadores/jugadores_equipo.svg">
+					<div id="jugadores-container">
+						<div id="xolos" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/xolos.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="chivas" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/chivas.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="tigres" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/tigres.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="pumas" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/pumas.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="queretaro" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/queretaro.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="pachuca" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/pachuca.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="cazul" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/cruzazul.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="leon" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/leon.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="monterrey" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/monterrey.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="america" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/america.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="santos" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/santos.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="atlas" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/atlas.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+						<div id="toluca" class="equipo-gnral">
+							<img class="img-responsive" src="images/jugadores/equipos/toluca.svg">
+							<div class="equipo-jugadores abs_center kalam">
+								<ul>
+									<li>Eduardo Herrera</li>
+									<li>Alejandro Palacios</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="incondicionales">
+				<div class="container">
+					<img class="encabezado img-responsive img-center" src="images/incondicionales/incondicionales.svg">
+					<div id="grafica-container">
+						<img class="img-responsive img-center" src="images/incondicionales/graficos.svg">
+						<div class="jugadores-incondicionales">
+							<div class="fotos-jugadores-incondicionales">
+								<img class="img-responsive img-center" src="images/fotos/javierharnandez.png">
+							</div>
+							<div class="linea-jugadores-incondicionales"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.0.1/Chart.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.concentradora.js"></script>	
+		<script type="text/javascript" src="js/script.js"></script>		
 	</body>
 </html>
