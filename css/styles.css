@@ -19,6 +19,8 @@ article{
 .circulo{
 	background-size: 100%;
 	background-repeat: no-repeat;
+	min-height: 50px;
+	text-align: center;
 }
 .abs_center{
 	position: absolute;
@@ -225,6 +227,75 @@ section#incondicionales{}
 	    font-size: 20px;
 	    text-transform: uppercase;
 	}
+section#goleadores{}
+	#header {
+	    margin: 30px 0px;
+	}
+	#goleador-stats{
+	    font-size: 30px;
+		width: 290px;
+		height: 64px;
+		margin: auto;
+		line-height: 64px;
+	}
+	#goleadores-btns{
+		height: 385px;
+		overflow-y: auto;
+	}
+	#goleador-stats > *{
+		display: inline-block;
+	}
+	#goleador-stats > #nombre-goleador{
+		float: left;
+	}
+	#goleador-stats > #goles-goleador,
+	#goleador-stats > img{
+		float: right;
+	}
+	#goleador-stats > img{
+		margin-left: 25px
+	}
+	.goleadores-jugadores{
+		cursor: pointer;
+		margin: 10px auto;
+	}
+	#total-goleadores{
+		font-size: 20px;
+	}
+	#total-goleadores > span {
+	    display: block;
+	    width: 40px;
+	    height: 22px;
+	}
+	#goaledor-head {
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	}
+	#goleador-cuerpo {
+	    padding-top: 50px;
+	}
+section#total-goles{
+	position: relative;
+}
+	.papel-roto{
+		position: absolute;
+		width: 100%;
+	}
+	.papel-roto > img{
+		width: 100%;
+	}
+	.papel-roto:nth-child(1){
+		top: 0;
+	}
+	.papel-roto:nth-child(3){
+		bottom: 0;
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);*/
+	}
 
 	
 	
@@ -413,6 +484,26 @@ section#incondicionales{}
 	span.minutos-incondicionales {
 	    float: right;
 	    width: auto;
+	}
+	#goleadores-btns {
+	    height: auto;
+	}
+	#goleadores-btns > .row{
+		padding-bottom: 30px;
+	}
+	.goleadores-jugadores{
+		margin: auto;
+	}
+	#total-goleadores {
+		padding: 0px;
+		font-size: 30px;
+	}
+	#total-goleadores > img {
+		width: 100px;
+	}
+	#total-goleadores > span {
+	    width: 65px;
+		height: 35px;
 	}
 }
 @media screen and (min-width: 992px){
