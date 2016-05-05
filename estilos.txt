@@ -1,0 +1,51 @@
+Puntajes de tipografia x seccion:
+
+-Partidos jugados: 
+
+partidos: 13
+numero: 48
+ganados, perdidos, empatados: 24
+equipos: 14
+
+-jugadores x equipo:
+
+ nombres:22
+
+-incondicionales:
+
+nombres: 12
+minutos: 24
+
+-Goleadores:
+
+Cantidad: 30
+minutos: 14
+
+-goles por zona:
+
+cantidad:30
+
+-penales:
+
+partidos of. y amis.:30
+anotados,recibidos: 36
+
+-goles por equipo:
+
+nombres: 24
+
+-uniformes:
+
+ganados: 20
+cantidad:26
+total: 26
+
+-estados:
+
+nombres estados:14 
+jugadores:12
+
+-Hojas sueltas:
+
+marcador: 24
+fecha:18
