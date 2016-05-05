@@ -38,9 +38,9 @@ article{
 	background-image: url("../images/portada/fondo_1.jpg");
 	background-position: center;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100%;
 	position: relative;
-	min-height: 420px;
+	min-height: 740px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }	
@@ -418,10 +418,37 @@ section#penales{}
 		margin-bottom: 60px;
 	}
 section#goles-equipo{}
-	.equipos-goleadores{
-
+section#uniformes{}
+	#uniformes-indi{
+		margin-top: 70px;
 	}
-
+	#uniformes-indi > div > img{
+		width: 39px;
+		margin-left: 25%;
+	}
+	#uniformes-indi > div > span{
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	#uniformes-playeras {
+	    margin-top: 50px;
+	}
+	.playeras-indi{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.playeras-indi > div > .circulo{
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		line-height: 50px;
+		font-size: 26px;
+	}
+	.playeras-total{
+		font-size: 26px;
+		line-height: 18px;
+	}
 
 
 
@@ -497,6 +524,9 @@ section#goles-equipo{}
 	}
 }
 @media screen and (min-width: 768px){
+	#portada {
+	    background-size: cover;
+	}
 	#logo-libreta {
     	width: 510px;
 	}
@@ -732,6 +762,19 @@ section#goles-equipo{}
 	.equipo-goleador:nth-child(7){left: 460px;}
 	.equipo-goleador:nth-child(8){left: 540px;}
 	.equipo-goleador:nth-child(9){left: 620px;}
+	#uniformes-indi > div > img{
+		margin-left: 0px;
+	}
+	#uniformes-indi > div > span{
+		font-size: 20px;
+		margin-top: 8px;
+		margin-left: 5px;
+		width: auto;
+	}
+	#uniformes-indi > div > *{
+		display: inline-block;
+		float: left;
+	}
 }
 @media screen and (min-width: 992px){
 	.partido-flechas{
