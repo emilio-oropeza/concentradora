@@ -449,6 +449,76 @@ section#uniformes{}
 		font-size: 26px;
 		line-height: 18px;
 	}
+section#estados{}
+	#mapa-estados{
+		background-image: url("../images/estados/hojaarrugada.png");
+		background-position: center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	#mapa-estados > .row{
+		padding: 50px;
+	}
+	#mapa-estados > .row > div{
+		position: relative;
+	}
+	.estado-activo {
+	    position: absolute;	    
+	    opacity: 0;
+	    cursor: pointer;
+	}
+	.estado-activo:hover {
+	    opacity: 1;
+	}
+	.estado-activo:nth-child(2){
+		top: 0;
+	    left: 10px;
+	    width: 113px;
+	}
+	#jalisco:hover{
+		fill: #b01852;
+		cursor: pointer;
+	}
+	#michoacan:hover{
+		fill: #17843d;
+		cursor: pointer;
+	}
+	#sinaloa:hover{
+		fill: #5a095e;
+		cursor: pointer;
+	}
+	#nuevo-leon:hover{
+		fill: #5a095e;
+		cursor: pointer;
+	}
+	#tamaulipas:hover{
+		fill: #d3623a;
+		cursor: pointer;
+	}
+	#hidalgo:hover{
+		fill: #1f76a2;
+		cursor: pointer;
+	}	
+	#sonora:hover{
+		fill: #1f76a2;
+		cursor: pointer;
+	}
+	#coahuila:hover{
+		fill: #1f76a2;
+		cursor: pointer;
+	}
+	#cdmx:hover{
+		fill: #1f76a2;
+		cursor: pointer;
+	}	
+	#guanajuato:hover{
+		fill: #1f76a2;
+		cursor: pointer;
+	}	
+	.bc:hover{
+		fill: #2a7a92;
+		cursor: pointer;
+	}
 
 
 
