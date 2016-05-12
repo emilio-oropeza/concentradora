@@ -453,7 +453,7 @@ section#estados{}
 	#mapa-estados{
 		background-image: url("../images/estados/hojaarrugada.png");
 		background-position: center;
-		background-size: 100%;
+		background-size: 100% 100%;
 		background-repeat: no-repeat;
 	}
 	#mapa-estados > .row{
@@ -461,6 +461,9 @@ section#estados{}
 	}
 	#mapa-estados > .row > div{
 		position: relative;
+	}
+	#mapa-estados > .row > #mapa{
+		display: none;
 	}
 	.estado-activo {
 	    position: absolute;	    
@@ -475,43 +478,43 @@ section#estados{}
 	    left: 10px;
 	    width: 113px;
 	}
-	#jalisco:hover{
+	.jalisco:hover{
 		fill: #b01852;
 		cursor: pointer;
 	}
-	#michoacan:hover{
+	.michoacan:hover{
 		fill: #17843d;
 		cursor: pointer;
 	}
-	#sinaloa:hover{
+	.sinaloa:hover{
 		fill: #5a095e;
 		cursor: pointer;
 	}
-	#nuevo-leon:hover{
+	.nuevo-leon:hover{
 		fill: #5a095e;
 		cursor: pointer;
 	}
-	#tamaulipas:hover{
+	.tamaulipas:hover{
 		fill: #d3623a;
 		cursor: pointer;
 	}
-	#hidalgo:hover{
+	.hidalgo:hover{
 		fill: #1f76a2;
 		cursor: pointer;
 	}	
-	#sonora:hover{
+	.sonora:hover{
 		fill: #1f76a2;
 		cursor: pointer;
 	}
-	#coahuila:hover{
+	.coahuila:hover{
 		fill: #1f76a2;
 		cursor: pointer;
 	}
-	#cdmx:hover{
+	.cdmx:hover{
 		fill: #1f76a2;
 		cursor: pointer;
 	}	
-	#guanajuato:hover{
+	.guanajuato:hover{
 		fill: #1f76a2;
 		cursor: pointer;
 	}	
@@ -519,7 +522,29 @@ section#estados{}
 		fill: #2a7a92;
 		cursor: pointer;
 	}
-
+	.estados {
+	    display: table;
+		padding-bottom: 15px;
+		margin: auto;
+		cursor: pointer;
+	}
+	.estados > img {
+	    display: table-cell;
+	    margin-right: 10px;
+	}
+	.estados > span {
+	    font-size: 25px;
+	    vertical-align: middle;
+	    display: table-cell;
+	    text-align: center;
+	}
+	.estados-jugadores {
+	    text-align: center;
+	}
+	.estados-jugadores > ul > li {
+		font-size: 20px;
+		list-style: none;
+	}
 
 
 
@@ -844,6 +869,9 @@ section#estados{}
 	#uniformes-indi > div > *{
 		display: inline-block;
 		float: left;
+	}
+	#mapa-estados > .row > #mapa{
+		display: block;
 	}
 }
 @media screen and (min-width: 992px){
