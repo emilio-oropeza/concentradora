@@ -466,6 +466,7 @@ section#estados{}
 	}
 	section#estados .media-object {
 	    min-height: 35px;
+	    max-width: 47PX;
 	}
 	section#estados .media-body{
 		text-align: center;
