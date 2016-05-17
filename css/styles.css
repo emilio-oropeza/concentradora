@@ -450,101 +450,87 @@ section#uniformes{}
 		line-height: 18px;
 	}
 section#estados{}
+	polygon{fill: #5b5c66;}
 	#mapa-estados{
 		background-image: url("../images/estados/hojaarrugada.png");
 		background-position: center;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
+		    padding: 50px;
 	}
 	#mapa-estados > .row{
-		padding: 50px;
+		padding: 50px 0px;
 	}
 	#mapa-estados > .row > div{
 		position: relative;
 	}
-	#mapa-estados > .row > #mapa{
+	section#estados .media-object {
+	    min-height: 35px;
+	}
+	section#estados .media-body{
+		text-align: center;
+		font-size: 16px;
+	}
+	#jugadores-estado{
+		position: relative;
+	}
+	#jugadores-estado > div{
+		position: absolute;
 		display: none;
 	}
-	.estado-activo {
-	    position: absolute;	    
-	    opacity: 0;
-	    cursor: pointer;
-	}
-	.estado-activo:hover {
-	    opacity: 1;
-	}
-	.estado-activo:nth-child(2){
-		top: 0;
-	    left: 10px;
-	    width: 113px;
-	}
-	.jalisco:hover{
-		fill: #b01852;
-		cursor: pointer;
-	}
-	.michoacan:hover{
-		fill: #17843d;
-		cursor: pointer;
-	}
-	.sinaloa:hover{
-		fill: #5a095e;
-		cursor: pointer;
-	}
-	.nuevo-leon:hover{
-		fill: #5a095e;
-		cursor: pointer;
-	}
-	.tamaulipas:hover{
-		fill: #d3623a;
-		cursor: pointer;
-	}
-	.hidalgo:hover{
-		fill: #1f76a2;
-		cursor: pointer;
-	}	
-	.sonora:hover{
-		fill: #1f76a2;
-		cursor: pointer;
-	}
-	.coahuila:hover{
-		fill: #1f76a2;
-		cursor: pointer;
-	}
-	.cdmx:hover{
-		fill: #1f76a2;
-		cursor: pointer;
-	}	
-	.guanajuato:hover{
-		fill: #1f76a2;
-		cursor: pointer;
-	}	
-	.bc:hover{
-		fill: #2a7a92;
-		cursor: pointer;
-	}
-	.estados {
-	    display: table;
-		padding-bottom: 15px;
-		margin: auto;
-		cursor: pointer;
-	}
-	.estados > img {
-	    display: table-cell;
-	    margin-right: 10px;
-	}
-	.estados > span {
-	    font-size: 25px;
-	    vertical-align: middle;
-	    display: table-cell;
-	    text-align: center;
-	}
-	.estados-jugadores {
-	    text-align: center;
-	}
-	.estados-jugadores > ul > li {
-		font-size: 20px;
+	#jugadores-estado > div:nth-child(1){top: 50px;}
+	#jugadores-estado > div:nth-child(2){top: 100px;}
+	#jugadores-estado > div:nth-child(3){top: 166px;}
+	#jugadores-estado > div:nth-child(4){top: 215px;}
+	#jugadores-estado > div:nth-child(5){top: 275px;}
+	#jugadores-estado > div:nth-child(6){top: 330px;}
+	#jugadores-estado > div:nth-child(7){top: 385px;}
+	#jugadores-estado > div:nth-child(8){top: 430px;}
+	#jugadores-estado > div:nth-child(9){top: 485px;}
+	#jugadores-estado > div:nth-child(10){top: 415px;}
+	#jugadores-estado > div:nth-child(11){top: 485px;}
+	#jugadores-estado > div:nth-child(12){top: 540px;}
+	#jugadores-estado > div:nth-child(13){top: 590px;}
+	#jugadores-estado > div:nth-child(14){top: 645px;}
+	#jugadores-estado > div:nth-child(15){top: 675px;}
+	#jugadores-estado > div:nth-child(16){top: 745px;}
+	#jugadores-estado > div:nth-child(17){top: 800px;}
+	#jugadores-estado > div:nth-child(18){top: 845px;}
+	#jugadores-estado > div > ul > li{
 		list-style: none;
+		text-align: center;
+		font-size: 18px;
 	}
+	.jalisco.active{fill: #c91358;}
+	.nayarit.active,
+	.michoacan.active{fill: #0b933e;}
+	.veracruz.active{fill: #5862af;}
+	.quintanaroo.active{fill: #ddcf26;}
+	.tamaulipas.active{fill: #fb6f38;}
+	.coahuila.active{fill: #2b88a4;}
+	.oaxaca.active{fill: #ef3011;}
+	.yucatan.active{fill: #20bcb4;}
+	.chihuahua.active{fill: #cc8f46;}
+	.morelos.active,
+	.sinaloa.active,
+	.nuevo_leon.active{
+		fill: #660066;
+	}	
+	.cdmx.active,
+	.guanajuato.active,
+	.baja.active,
+	.hidalgo.active,
+	.sonora.active{
+		fill: #2b88a4;
+	}
+	#jugadores-estado > .active{
+		display: block;
+	}
+	#nombres-estados > div.active{
+		cursor: pointer;
+		opacity: 0.5;
+	}
+	
 
 
 
@@ -871,7 +857,15 @@ section#estados{}
 		float: left;
 	}
 	#mapa-estados > .row > #mapa{
-		display: block;
+		padding-top: 190px;
+	}
+	section#estados .media{
+		height: 60px;
+		margin-top: 0px;
+	}
+	#jugadores-estado > div {
+	    position: relative;
+	    top: 180px !important;
 	}
 }
 @media screen and (min-width: 992px){
@@ -969,6 +963,9 @@ section#estados{}
 	.equipo-goleador:nth-child(7){left: 604px;}
 	.equipo-goleador:nth-child(8){left: 708px;}
 	.equipo-goleador:nth-child(9){left: 812px;}
+	#mapa-estados > .row > #mapa {
+	    padding-top: 130px;
+	}
 }
 @media screen and (min-width: 1200px){
 	.partido-flechas {
