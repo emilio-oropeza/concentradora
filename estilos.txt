@@ -49,3 +49,23 @@ jugadores:12
 
 marcador: 24
 fecha:18
+
+
+2016-05-19T15:41:42.754778Z 1 [Note] A temporary password is generated for root@localhost: wGnTo-s_W5Tp
+
+If you lose this password, please consult the section How to Reset the Root Password in the MySQL reference manual.
+
+
+
+
+SantiCordera
+
+5ant1C0rd3ra?
+
+InfoCamaraHungaraSt
+
+1nf0C4m4r4Hung4r45t
+
+MauricioCabrera
+
+M4ur1c10C48r3r4
