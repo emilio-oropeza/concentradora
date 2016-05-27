@@ -35,5 +35,25 @@
 			"mexicoIsLocal":true,
 			"oficial": true
 		}
+	],
+	"playeras":[
+		{
+			"ganados": 1,
+			"perdidos": 0,
+			"empatados": 0,
+			"total": 1
+		},
+		{
+			"ganados": 1,
+			"perdidos": 0,
+			"empatados": 0,
+			"total": 1
+		},
+		{
+			"ganados": 3,
+			"perdidos": 0,
+			"empatados": 0,
+			"total": 3
+		}
 	]
 }

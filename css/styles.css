@@ -878,7 +878,6 @@ section#hojas{}
 		margin: auto;
 		border-right: 3px dashed #000;
 		max-height: 325px;
-		height: 1000px;
 		min-height: 0px;
 	}
 	span.minutos-incondicionales {
@@ -957,7 +956,7 @@ section#hojas{}
 	    left: 582px;
 	}
 	.equipos-graficas {
-	    height: 373px;
+	    height: 400px;
 	    margin-top: 185px;
 	}
 	.equipo-goleador > .fotos-elemento-grafica > span.minutos-incondicionales{
@@ -1182,7 +1181,7 @@ section#hojas{}
 	    left: 750px;
 	}
 	.equipos-graficas {
-	    height: 478px;
+	    height: 500px;
 	}
 	#flecha-cabeza {
 	    right: 20px;
@@ -1293,7 +1292,7 @@ section#hojas{}
 	    max-height: 512px;
 	}
 	.equipos-graficas {
-	    height: 580px;
+	    height: 598px;
 	}
 	.equipo-goleador > .nombre-elemento-grafica {
 	    margin-top: 45px;

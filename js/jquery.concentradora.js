@@ -15,6 +15,7 @@
 				init:function(){
 					componentObj.methods.getPartidos();
 					componentObj.methods.getJugadores();
+					componentObj.methods.getGoles();
 					$("#partidos-desgloce > div").each(function(num, val){
 						var i = $(this).find("i");
 						$(this).hover(function(){
@@ -99,6 +100,7 @@
 					});					
 					componentObj.methods.insertarGrafico("canvas-oficiales", data_oficiales);
 					componentObj.methods.insertarGrafico("canvas-amistosos", data_amistosos);
+					componentObj.methods.partidosPlayeras(data.playeras);
 					$("#partidos-total").text(total);
 					$($(".abs_center").get(0)).find("span").text(partidosOficiales);
 					$($(".abs_center").get(1)).find("span").text(partidosAmistosos);
@@ -137,6 +139,18 @@
 					li += '<div class="partido-marcador"><span class="mexico-pointer '+local+'"></span>'+marcador+'</div>';
 					componentObj.methods.insertarLi(id, li);
 				},
+				partidosPlayeras: function(partidos){
+					$("#uniformes-playeras > div").each(function(i,el){
+						var ganados = $(el).find(".playeras-indi > div > .circulo-azul > span");
+						var perdidos = $(el).find(".playeras-indi > div > .circulo-rojo > span");
+						var empatados = $(el).find(".playeras-indi > div > .circulo-gris > span");
+						var total = $(el).find(".playeras-total > p").get(1);
+						$(ganados).text(partidos[i].ganados);
+						$(perdidos).text(partidos[i].perdidos);
+						$(empatados).text(partidos[i].empatados);
+						$(total).text(partidos[i].total);
+					});
+				},
 				showPartidos: function(i, val){
 					if( $(val).height() == "198"){
 						componentObj.methods.autoHeightAnimate($(val), 500);
@@ -167,15 +181,16 @@
 				},
 				insertInco: function(jugadores){
 					$('.jugadores-incondicionales').each(function(i, el){
+						var linea = $(this).find(".linea-elemento-grafica");
 						var jugador = jugadores[i];
 						var img_nombre = jugador.nombre.split(" ").join("_");
 						img_nombre = componentObj.methods.acentos(img_nombre);
 						var img = '<img class="img-responsive img-center" src="images/fotos/'+img_nombre.toLowerCase()+'.png">';
 						$(img).prependTo($(this).find(".fotos-elemento-grafica"));
 						$('<span class="minutos-incondicionales">'+jugador.minutos+' <span>min</span></span>').appendTo($(this).find(".fotos-elemento-grafica"));
-						componentObj.methods.lineHeight($(this).find(".linea-elemento-grafica"), jugador.minutos);
+						componentObj.methods.lineHeight(linea, jugador.minutos, 1500);
 						$(window).resize(function(){
-							componentObj.methods.lineHeight($(this).find(".linea-elemento-grafica"), jugador.minutos);
+							componentObj.methods.lineHeight(linea, jugador.minutos, 1500);
 						});
 						$(this).find(".nombre-elemento-grafica").text(jugador.nombre);
 					});
@@ -192,6 +207,28 @@
 								componentObj.methods.goleador_activo(img_nombre, jugador);
 							}
 							$(img).appendTo($(this));
+						}else{
+							var der = 0;
+							var izq = 0;
+							var cabeza = 0;
+							var totales = 0;
+							$(jugadores).each(function(i, player){
+								der += player.goles.der; 
+								izq += player.goles.izq; 
+								cabeza += player.goles.cabeza; 
+								totales += player.goles.totales; 
+							});
+							var jug = {
+								"nombre": "Total",
+								"goles":{
+									"der": der,
+									"izq": izq,
+									"cabeza": cabeza,
+									"totales": totales
+								}
+							};
+							img_nombre = jug.nombre;
+							jugador = jug;
 						}
 						$(this).click(function(){
 							componentObj.methods.goleador_activo(img_nombre, jugador);
@@ -202,20 +239,78 @@
 					var img_url = urlIndepth + "images/fotos/"+img_nombre+"_cara.png";
 					$("#goaledor-head").attr("src", img_url);
 					$("#flecha-cabeza").find("span").text(jugador.goles.cabeza);
-					$("#flecha-pie-der").find("span").text(jugador.goles.der);
-					$("#flecha-pie-izq").find("span").text(jugador.goles.izq);
+					$("#flecha-pie-der").find("span").text(jugador.goles.izq);
+					$("#flecha-pie-izq").find("span").text(jugador.goles.der);
 					$("#nombre-goleador").text(jugador.nombre);
 					$("#goles-goleador").text(jugador.goles.totales);
 				},
-				lineHeight: function(el, height){
-					var max_height = 325;
-					if($(window).width() > 991){
+				getGoles: function(){
+					$.getJSON(urlIndepth+"json/goles.json", componentObj.methods.goles);
+				},
+				goles: function(data){
+					componentObj.methods.golesPorTiempos(data.tiempos);
+					data.equipos.sort(componentObj.methods.ordenPorGoles2);
+					componentObj.methods.golesPorEquipos(data.equipos);	
+					componentObj.methods.golesPorZonas(data.zonas);
+					componentObj.methods.golesPorPenales(data.penales);			
+				},
+				golesPorTiempos: function(goles){
+					$(".graficas-content").each(function(i, el){
+						var tiempo = goles[i];
+						var graph = $(this).find("div");
+						$(graph).find(".zona1").text(tiempo.t15);
+						$(graph).find(".zona2").text(tiempo.t30);
+						$(graph).find(".zona3").text(tiempo.t45);
+						$(graph).find(".zona4").text(tiempo.t60);
+						$(graph).find(".zona5").text(tiempo.t75);
+						$(graph).find(".zona6").text(tiempo.t90);
+					});
+				},
+				golesPorZonas: function(goles){
+					$("#cancha").find("#cancha-1").text(goles.cancha1);
+					$("#cancha").find("#cancha-2").text(goles.cancha2);
+					$("#cancha").find("#cancha-3").text(goles.cancha3);
+					$("#cancha").find("#cancha-4").text(goles.cancha4);
+					$("#cancha").find("#cancha-5").text(goles.cancha5);
+					$("#cancha").find("#cancha-6").text(goles.cancha6);
+					$("#cancha").find("#cancha-7").text(goles.cancha7);
+				},
+				golesPorPenales: function(goles){
+					$(".penales-stats").each(function(i, el){
+						var anotados = $(this).find(".circulo > span").get(0);
+						var recibidos = $(this).find(".circulo > span").get(1);
+						$(anotados).text(goles[i].anotados);
+						$(recibidos).text(goles[i].recibidos);
+					});
+				},
+				golesPorEquipos: function(equipos){
+					$('.equipo-goleador').each(function(i, el){
+						var equipo = equipos[i];
+						if(equipo != undefined){
+							var linea = $(this).find(".linea-elemento-grafica");
+							var img_nombre = equipo.nombre.split(" ").join("_");
+							img_nombre = componentObj.methods.acentos(img_nombre);
+							var img = '<img class="img-responsive img-center" src="images/fotos/'+img_nombre.toLowerCase()+'.png">';
+							$(img).prependTo($(this).find(".fotos-elemento-grafica"));
+							componentObj.methods.lineHeight(linea, equipo.goles, 15);
+							$(window).resize(function(){
+								componentObj.methods.lineHeight(linea, equipo.goles, 15);
+							});
+							$(this).find(".nombre-elemento-grafica").text(equipo.nombre);
+						}
+					});
+				},
+				lineHeight: function(el, height, max_graf){
+					var max_height = 0;
+					if($(window).width() > 768 && $(window).width() <= 991){	
+						max_height = 325;
+					}else if($(window).width() > 991 && $(window).width() <= 1999){
 						max_height = 425;
 					}else if($(window).width() > 1999){
 						max_height = 512;
 					}
-					var finalHeight =  (max_height * height) / 1500;
-					$(el).height(finalHeight);
+					var finalHeight =  (max_height * height) / max_graf;
+					$(el).css({"height":finalHeight+"px"});
 				},
 				autoHeightAnimate: function(element, time){
   					var curHeight = (element).height(); 
@@ -233,6 +328,7 @@
 					string = string.replace("í", "i");
 					string = string.replace("ó", "o");
 					string = string.replace("ú", "u");
+					string = string.replace("ü", "u");
 					string = string.replace("Á", "A");
 					string = string.replace("É", "E");
 					string = string.replace("Í", "I");
@@ -247,6 +343,9 @@
 				},
 				ordenPorGoles: function(jugador1, jugador2){
 					return jugador2.goles.totales - jugador1.goles.totales;
+				},
+				ordenPorGoles2: function(equipo1, equipo2){
+					return equipo2.goles - equipo1.goles;
 				}
 			}
 		};
