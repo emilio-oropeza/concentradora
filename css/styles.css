@@ -288,6 +288,7 @@ section#goleadores{}
 	}
 	#goleador-stats > #nombre-goleador{
 		float: left;
+		font-size: 25px;
 	}
 	#goleador-stats > #goles-goleador,
 	#goleador-stats > img{

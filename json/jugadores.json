@@ -49,10 +49,10 @@
 			"club": "PSV",
 			"minutos": 360,
 			"goles":{
-				"der": 0,
+				"der": 1,
 				"izq": 2,
 				"cabeza": 0,
-				"totales": 2
+				"totales": 3
 			}
 		},
 		{	
@@ -78,7 +78,7 @@
 			}
 		},
 		{	
-			"nombre": "Jesús Manuel Corona",
+			"nombre": "Jesús M Corona",
 			"club": "Porto",
 			"minutos": 299,
 			"goles":{

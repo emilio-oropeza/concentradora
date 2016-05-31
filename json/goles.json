@@ -14,7 +14,7 @@
 		},
 		{
 			"nombre": "PSV",
-			"goles": 2
+			"goles": 3
 		},
 		{
 			"nombre": "Bayern Leverkusen",
@@ -36,7 +36,7 @@
 		},
 		{
 			"t15": 0,
-			"t30": 0,
+			"t30": 1,
 			"t45": 0,
 			"t60": 0,
 			"t75": 1,
@@ -62,7 +62,7 @@
 	"zonas": {
 		"cancha1": 0,
 		"cancha2": 0,
-		"cancha3": 11,
+		"cancha3": 12,
 		"cancha4": 0,
 		"cancha5": 0,
 		"cancha6": 0,
