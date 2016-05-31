@@ -860,7 +860,7 @@ section#hojas{}
 	#img-favorito{
 		display: block;
 		position: absolute;
-		bottom: 405px;
+		bottom: 180px;
 		width: 183px;
 		left: -93px;
 	}
@@ -1131,7 +1131,7 @@ section#hojas{}
 	.jugadores-incondicionales:nth-child(8) {left: 701px;}
 	.jugadores-incondicionales:nth-child(9) {left: 809px;}
 	#img-favorito {
-	    bottom: 509px;
+	    bottom: 205px;
 	    width: 222px;
 	    left: -115px;
 	}
@@ -1287,7 +1287,7 @@ section#hojas{}
 	.jugadores-incondicionales:nth-child(8) {left: 858px;}
 	.jugadores-incondicionales:nth-child(9) {left: 990px;}
 	#img-favorito {
-	    bottom: 600px;
+		bottom: 208px;
 	}
 	.linea-elemento-grafica {
 	    max-height: 512px;
