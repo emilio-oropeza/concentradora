@@ -245,11 +245,13 @@ section#incondicionales{}
 	}
 	.elemento-grafica {
 	    position: relative;
-	    display: inline-block;
-	    float: left;
+	    display: block;
+	    height: 235px;
 	    width: 40%;
 		margin: 5% 5%;
 	}
+	.elemento-grafica:nth-child(even) {float: left;}
+	.elemento-grafica:nth-child(odd) {float: right;}
 	.fotos-elemento-grafica > img{
 		width: 100%;
 		max-width: 150px;
@@ -269,7 +271,7 @@ section#incondicionales{}
 	}
 	#img-favorito {display: none;}
 section#goleadores{}
-	#header {
+	#header-goleadores {
 	    margin: 30px 0px;
 	}
 	#goleador-stats{
@@ -860,7 +862,7 @@ section#hojas{}
 	#img-favorito{
 		display: block;
 		position: absolute;
-		bottom: 180px;
+		bottom: 209px;
 		width: 183px;
 		left: -93px;
 	}
@@ -1131,7 +1133,7 @@ section#hojas{}
 	.jugadores-incondicionales:nth-child(8) {left: 701px;}
 	.jugadores-incondicionales:nth-child(9) {left: 809px;}
 	#img-favorito {
-	    bottom: 205px;
+	    bottom: 243px;
 	    width: 222px;
 	    left: -115px;
 	}
@@ -1287,7 +1289,7 @@ section#hojas{}
 	.jugadores-incondicionales:nth-child(8) {left: 858px;}
 	.jugadores-incondicionales:nth-child(9) {left: 990px;}
 	#img-favorito {
-		bottom: 208px;
+		bottom: 242px;
 	}
 	.linea-elemento-grafica {
 	    max-height: 512px;

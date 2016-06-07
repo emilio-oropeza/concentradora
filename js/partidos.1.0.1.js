@@ -1,4 +1,4 @@
-{
+var partidos = {
 	"partidos":[		
 		{
 			"rival":"El Salvador",
@@ -41,6 +41,20 @@
 			"scoreVisitante":0,
 			"mexicoIsLocal":true,
 			"oficial": false
+		},
+		{
+			"rival":"Chile",
+			"scoreLocal":1,
+			"scoreVisitante":0,
+			"mexicoIsLocal":true,
+			"oficial": false
+		},
+		{
+			"rival":"Uruguay",
+			"scoreLocal":3,
+			"scoreVisitante":1,
+			"mexicoIsLocal":true,
+			"oficial": true
 		}
 	],
 	"playeras":[
@@ -51,16 +65,16 @@
 			"total": 2
 		},
 		{
-			"ganados": 1,
+			"ganados": 2,
 			"perdidos": 0,
 			"empatados": 0,
-			"total": 1
+			"total": 2
 		},
 		{
-			"ganados": 3,
+			"ganados": 4,
 			"perdidos": 0,
 			"empatados": 0,
-			"total": 3
+			"total": 4
 		}
 	]
-}
+};

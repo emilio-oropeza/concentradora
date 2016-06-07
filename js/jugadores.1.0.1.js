@@ -1,4 +1,4 @@
-{
+var jugadores = {
 	"jugadores":[
 		{	
 			"nombre": "Moisés Muñoz",
@@ -14,7 +14,7 @@
 		{	
 			"nombre": "Héctor Moreno",
 			"club": "PSV",
-			"minutos": 372,
+			"minutos": 462,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -47,7 +47,7 @@
 		{	
 			"nombre": "Andrés Guardado",
 			"club": "PSV",
-			"minutos": 416,
+			"minutos": 534,
 			"goles":{
 				"der": 0,
 				"izq": 3,
@@ -58,7 +58,7 @@
 		{	
 			"nombre": "Miguel Layún",
 			"club": "Porto",
-			"minutos": 342,
+			"minutos": 522,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -69,18 +69,18 @@
 		{	
 			"nombre": "Héctor Herrera",
 			"club": "Porto",
-			"minutos": 332,
+			"minutos": 487,
 			"goles":{
 				"der": 1,
 				"izq": 0,
-				"cabeza": 0,
-				"totales": 1
+				"cabeza": 1,
+				"totales": 2
 			}
 		},
 		{	
 			"nombre": "Jesús M Corona",
 			"club": "Porto",
-			"minutos": 299,
+			"minutos": 417,
 			"goles":{
 				"der": 3,
 				"izq": 0,
@@ -102,7 +102,7 @@
 		{	
 			"nombre": "Oribe Peralta",
 			"club": "América",
-			"minutos": 101,
+			"minutos": 163,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -113,12 +113,12 @@
 		{	
 			"nombre": "Javier Hernández",
 			"club": "Bayer Leverkusen",
-			"minutos": 280,
+			"minutos": 375,
 			"goles":{
 				"der": 0,
 				"izq": 0,
-				"cabeza": 1,
-				"totales": 1
+				"cabeza": 2,
+				"totales": 2
 			}
 		},
 		{	
@@ -135,7 +135,7 @@
 		{	
 			"nombre": "Raúl Jiménez",
 			"club": "Benfica",
-			"minutos": 167,
+			"minutos": 252,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -157,7 +157,7 @@
 		{	
 			"nombre": "Alfredo Talavera",
 			"club": "Toluca",
-			"minutos": 180,
+			"minutos": 360,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -190,7 +190,7 @@
 		{	
 			"nombre": "Diego Reyes",
 			"club": "Real Sociedad",
-			"minutos": 209,
+			"minutos": 389,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -201,7 +201,7 @@
 		{	
 			"nombre": "Javier Aquino",
 			"club": "Tigres",
-			"minutos": 171,
+			"minutos": 259,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -223,7 +223,7 @@
 		{	
 			"nombre": "Jorge Torres Nilo",
 			"club": "Tigres",
-			"minutos": 119,
+			"minutos": 209,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -300,7 +300,7 @@
 		{	
 			"nombre": "Yasser Corona",
 			"club": "Querétaro",
-			"minutos": 124,
+			"minutos": 214,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -344,7 +344,7 @@
 		{	
 			"nombre": "Néstor Araujo",
 			"club": "Santos",
-			"minutos": 226,
+			"minutos": 361,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -410,7 +410,7 @@
 		{	
 			"nombre": "Hirving Lozano",
 			"club": "Pachuca",
-			"minutos": 150,
+			"minutos": 213,
 			"goles":{
 				"der": 1,
 				"izq": 0,
@@ -432,7 +432,7 @@
 		{	
 			"nombre": "Jesús Molina",
 			"club": "Santos",
-			"minutos": 255,
+			"minutos": 300,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -465,7 +465,7 @@
 		{	
 			"nombre": "Jesús Dueñas",
 			"club": "Tigres",
-			"minutos": 151,
+			"minutos": 205,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -476,7 +476,7 @@
 		{	
 			"nombre": "Paul Aguilar",
 			"club": "América",
-			"minutos": 124,
+			"minutos": 170,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -498,13 +498,13 @@
 		{	
 			"nombre": "Rafael Márquez",
 			"club": "Atlas",
-			"minutos": 135,
+			"minutos": 225,
 			"goles":{
-				"der": 0,
+				"der": 1,
 				"izq": 0,
 				"cabeza": 0,
-				"totales": 0
+				"totales": 1
 			}
 		}
 	]
-}
+};
