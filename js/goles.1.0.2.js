@@ -64,13 +64,13 @@ var goles = {
 		}
 	],
 	"zonas": {
-		"cancha1": 0,
-		"cancha2": 0,
-		"cancha3": 15,
-		"cancha4": 0,
-		"cancha5": 0,
+		"cancha1": 2,
+		"cancha2": 5,
+		"cancha3": 4,
+		"cancha4": 4,
+		"cancha5": 1,
 		"cancha6": 0,
-		"cancha7": 0
+		"cancha7": 1
 	},
 	"penales": [
 		{
