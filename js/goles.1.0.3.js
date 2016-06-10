@@ -18,7 +18,7 @@ var goles = {
 		},
 		{
 			"nombre": "Bayern Leverkusen",
-			"goles": 2
+			"goles": 3
 		},
 		{
 			"nombre": "Real Sociedad",
@@ -27,16 +27,20 @@ var goles = {
 		{
 			"nombre": "Atlas",
 			"goles": 1
+		},
+		{
+			"nombre": "América",
+			"goles": 1
 		}
 	],
 	"tiempos": [
 		{
 			"t15": 2,
-			"t30": 1,
+			"t30": 2,
 			"t45": 4,
 			"t60": 0,
 			"t75": 4,
-			"t90": 2
+			"t90": 3
 		},
 		{
 			"t15": 0,
@@ -64,13 +68,13 @@ var goles = {
 		}
 	],
 	"zonas": {
-		"cancha1": 0,
-		"cancha2": 0,
-		"cancha3": 15,
-		"cancha4": 0,
-		"cancha5": 0,
+		"cancha1": 2,
+		"cancha2": 5,
+		"cancha3": 4,
+		"cancha4": 5,
+		"cancha5": 1,
 		"cancha6": 0,
-		"cancha7": 0
+		"cancha7": 1
 	},
 	"penales": [
 		{

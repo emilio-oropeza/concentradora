@@ -55,14 +55,21 @@ var partidos = {
 			"scoreVisitante":1,
 			"mexicoIsLocal":true,
 			"oficial": true
+		},
+		{
+			"rival":"Jamaica",
+			"scoreLocal":2,
+			"scoreVisitante":0,
+			"mexicoIsLocal":true,
+			"oficial": true
 		}
 	],
 	"playeras":[
 		{
-			"ganados": 2,
+			"ganados": 3,
 			"perdidos": 0,
 			"empatados": 0,
-			"total": 2
+			"total": 3
 		},
 		{
 			"ganados": 2,
