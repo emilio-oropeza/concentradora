@@ -62,14 +62,21 @@ var partidos = {
 			"scoreVisitante":0,
 			"mexicoIsLocal":true,
 			"oficial": true
+		},
+		{
+			"rival":"Venezuela",
+			"scoreLocal":1,
+			"scoreVisitante":1,
+			"mexicoIsLocal":true,
+			"oficial": true
 		}
 	],
 	"playeras":[
 		{
 			"ganados": 3,
 			"perdidos": 0,
-			"empatados": 0,
-			"total": 3
+			"empatados": 1,
+			"total": 4
 		},
 		{
 			"ganados": 2,

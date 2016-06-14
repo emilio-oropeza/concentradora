@@ -14,7 +14,7 @@ var jugadores = {
 		{	
 			"nombre": "Héctor Moreno",
 			"club": "PSV",
-			"minutos": 552,
+			"minutos": 642,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -47,7 +47,7 @@ var jugadores = {
 		{	
 			"nombre": "Andrés Guardado",
 			"club": "PSV",
-			"minutos": 534,
+			"minutos": 624,
 			"goles":{
 				"der": 0,
 				"izq": 3,
@@ -58,7 +58,7 @@ var jugadores = {
 		{	
 			"nombre": "Miguel Layún",
 			"club": "Porto",
-			"minutos": 612,
+			"minutos": 657,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -69,7 +69,7 @@ var jugadores = {
 		{	
 			"nombre": "Héctor Herrera",
 			"club": "Porto",
-			"minutos": 577,
+			"minutos": 667,
 			"goles":{
 				"der": 1,
 				"izq": 0,
@@ -80,12 +80,12 @@ var jugadores = {
 		{	
 			"nombre": "Jesús M Corona",
 			"club": "Porto",
-			"minutos": 480,
+			"minutos": 552,
 			"goles":{
-				"der": 3,
+				"der": 4,
 				"izq": 0,
 				"cabeza": 0,
-				"totales": 3
+				"totales": 4
 			}
 		},
 		{	
@@ -102,7 +102,7 @@ var jugadores = {
 		{	
 			"nombre": "Oribe Peralta",
 			"club": "América",
-			"minutos": 175,
+			"minutos": 265,
 			"goles":{
 				"der": 0,
 				"izq": 1,
@@ -113,7 +113,7 @@ var jugadores = {
 		{	
 			"nombre": "Javier Hernández",
 			"club": "Bayer Leverkusen",
-			"minutos": 453,
+			"minutos": 475,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -201,7 +201,7 @@ var jugadores = {
 		{	
 			"nombre": "Javier Aquino",
 			"club": "Tigres",
-			"minutos": 259,
+			"minutos": 277,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -223,7 +223,7 @@ var jugadores = {
 		{	
 			"nombre": "Jorge Torres Nilo",
 			"club": "Tigres",
-			"minutos": 209,
+			"minutos": 254,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -278,7 +278,7 @@ var jugadores = {
 		{	
 			"nombre": "José de Jesús Corona",
 			"club": "Cruz Azul",
-			"minutos": 180,
+			"minutos": 270,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -410,7 +410,7 @@ var jugadores = {
 		{	
 			"nombre": "Hirving Lozano",
 			"club": "Pachuca",
-			"minutos": 240,
+			"minutos": 330,
 			"goles":{
 				"der": 1,
 				"izq": 0,
@@ -432,7 +432,7 @@ var jugadores = {
 		{	
 			"nombre": "Jesús Molina",
 			"club": "Santos",
-			"minutos": 318,
+			"minutos": 386,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -476,7 +476,7 @@ var jugadores = {
 		{	
 			"nombre": "Paul Aguilar",
 			"club": "América",
-			"minutos": 170,
+			"minutos": 260,
 			"goles":{
 				"der": 0,
 				"izq": 0,

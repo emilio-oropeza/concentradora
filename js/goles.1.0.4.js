@@ -2,7 +2,7 @@ var goles = {
 	"equipos": [
 		{
 			"nombre": "Porto",
-			"goles": 5
+			"goles": 6
 		},
 		{
 			"nombre": "Pachuca",
@@ -40,7 +40,7 @@ var goles = {
 			"t45": 4,
 			"t60": 0,
 			"t75": 4,
-			"t90": 3
+			"t90": 4
 		},
 		{
 			"t15": 0,
@@ -51,7 +51,7 @@ var goles = {
 			"t90": 2
 		},
 		{
-			"t15": 0,
+			"t15": 1,
 			"t30": 0,
 			"t45": 0,
 			"t60": 1,
@@ -70,11 +70,11 @@ var goles = {
 	"zonas": {
 		"cancha1": 2,
 		"cancha2": 5,
-		"cancha3": 4,
-		"cancha4": 5,
+		"cancha3": 6,
+		"cancha4": 4,
 		"cancha5": 1,
-		"cancha6": 0,
-		"cancha7": 1
+		"cancha6": 1,
+		"cancha7": 0
 	},
 	"penales": [
 		{
