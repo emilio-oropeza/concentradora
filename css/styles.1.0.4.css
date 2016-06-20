@@ -860,7 +860,6 @@ section#hojas{}
 	.jugadores-incondicionales:nth-child(8) {left: 533px;}
 	.jugadores-incondicionales:nth-child(9) {left: 615px;}
 	#img-favorito{
-		display: block;
 		position: absolute;
 		bottom: 209px;
 		width: 183px;

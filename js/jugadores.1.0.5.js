@@ -14,7 +14,7 @@ var jugadores = {
 		{	
 			"nombre": "Héctor Moreno",
 			"club": "PSV",
-			"minutos": 642,
+			"minutos": 732,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -47,7 +47,7 @@ var jugadores = {
 		{	
 			"nombre": "Andrés Guardado",
 			"club": "PSV",
-			"minutos": 624,
+			"minutos": 714,
 			"goles":{
 				"der": 0,
 				"izq": 3,
@@ -58,7 +58,7 @@ var jugadores = {
 		{	
 			"nombre": "Miguel Layún",
 			"club": "Porto",
-			"minutos": 657,
+			"minutos": 747,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -69,7 +69,7 @@ var jugadores = {
 		{	
 			"nombre": "Héctor Herrera",
 			"club": "Porto",
-			"minutos": 667,
+			"minutos": 757,
 			"goles":{
 				"der": 1,
 				"izq": 0,
@@ -80,7 +80,7 @@ var jugadores = {
 		{	
 			"nombre": "Jesús M Corona",
 			"club": "Porto",
-			"minutos": 552,
+			"minutos": 612,
 			"goles":{
 				"der": 4,
 				"izq": 0,
@@ -113,7 +113,7 @@ var jugadores = {
 		{	
 			"nombre": "Javier Hernández",
 			"club": "Bayer Leverkusen",
-			"minutos": 475,
+			"minutos": 565,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -135,7 +135,7 @@ var jugadores = {
 		{	
 			"nombre": "Raúl Jiménez",
 			"club": "Benfica",
-			"minutos": 342,
+			"minutos": 387,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -179,7 +179,7 @@ var jugadores = {
 		{	
 			"nombre": "Carlos Peña",
 			"club": "Chivas",
-			"minutos": 90,
+			"minutos": 135,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -190,7 +190,7 @@ var jugadores = {
 		{	
 			"nombre": "Diego Reyes",
 			"club": "Real Sociedad",
-			"minutos": 389,
+			"minutos": 509,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -245,7 +245,7 @@ var jugadores = {
 		{	
 			"nombre": "Guillermo Ochoa",
 			"club": "Málaga",
-			"minutos": 180,
+			"minutos": 270,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -344,7 +344,7 @@ var jugadores = {
 		{	
 			"nombre": "Néstor Araujo",
 			"club": "Santos",
-			"minutos": 451,
+			"minutos": 541,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -410,7 +410,7 @@ var jugadores = {
 		{	
 			"nombre": "Hirving Lozano",
 			"club": "Pachuca",
-			"minutos": 330,
+			"minutos": 565,
 			"goles":{
 				"der": 1,
 				"izq": 0,
@@ -465,7 +465,7 @@ var jugadores = {
 		{	
 			"nombre": "Jesús Dueñas",
 			"club": "Tigres",
-			"minutos": 277,
+			"minutos": 322,
 			"goles":{
 				"der": 0,
 				"izq": 0,
@@ -476,7 +476,7 @@ var jugadores = {
 		{	
 			"nombre": "Paul Aguilar",
 			"club": "América",
-			"minutos": 260,
+			"minutos": 350,
 			"goles":{
 				"der": 0,
 				"izq": 0,

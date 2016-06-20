@@ -69,6 +69,13 @@ var partidos = {
 			"scoreVisitante":1,
 			"mexicoIsLocal":true,
 			"oficial": true
+		},
+		{
+			"rival":"Chile",
+			"scoreLocal":0,
+			"scoreVisitante":7,
+			"mexicoIsLocal":true,
+			"oficial": true
 		}
 	],
 	"playeras":[
@@ -80,9 +87,9 @@ var partidos = {
 		},
 		{
 			"ganados": 2,
-			"perdidos": 0,
+			"perdidos": 1,
 			"empatados": 0,
-			"total": 2
+			"total": 3
 		},
 		{
 			"ganados": 4,
